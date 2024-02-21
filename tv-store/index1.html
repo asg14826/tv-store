@@ -32,6 +32,13 @@
         <button class="submit btn btn-success" type="submit">order</button>
     </form> 
     </div>
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const name = params.get('name');
+        document.getElementById('inputStoreName').value = name
+        const price = params.get('price');
+        document.getElementById('price').value = price
+    </script>
     
 </body>
 </html>

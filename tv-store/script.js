@@ -36,7 +36,8 @@ $(() => {
 
         //adding functionality  to the buy btn 
         $(`#btnBuy${i}`).click(function (e){
-            window.location.href = 'index1.html'
+            
+            window.location.href = `index1.html?name=${document.getElementById(`storeName${i}`).innerHTML}&price=${document.getElementById(`price${i}`).innerHTML}`
         })
 
         total += tvStoers[i].price
